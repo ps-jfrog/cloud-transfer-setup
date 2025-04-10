@@ -1,0 +1,72 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jfrog-transfer
+  labels:
+    app: jfrog-transfer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jfrog-transfer
+  template:
+    metadata:
+      labels:
+        app: jfrog-transfer
+    spec:
+      containers:
+      - name: jfrog-transfer
+        image: releases-docker.jfrog.io/jfrog/jfrog-cli-full-v2-jf
+        command: ["/bin/sh", "-c", "tail -f /dev/null"]
+        volumeMounts:
+        - name: jfrog-data
+          mountPath: /opt/jfrog
+        env:
+        - name: SOURCE_SERVER_CONFIG
+          valueFrom:
+            secretKeyRef:
+              name: jfrog-secrets
+              key: source-server-config
+        - name: TARGET_SERVER_CONFIG
+          valueFrom:
+            secretKeyRef:
+              name: jfrog-secrets
+              key: target-server-config
+        readinessProbe:
+          exec:
+            command:
+            - cat
+            - /opt/jfrog/init.log
+          initialDelaySeconds: 10
+          periodSeconds: 5
+        lifecycle:
+          postStart:
+            exec:
+              command:
+              - /bin/sh
+              - -c
+              - |
+                set -x
+                echo "Starting postStart hook" > /opt/jfrog/init.log
+                
+                echo "Importing source server configuration..." >> /opt/jfrog/init.log
+                SOURCE_CONFIG=$(echo "$SOURCE_SERVER_CONFIG" | base64)
+                if ! jf c import "$SOURCE_CONFIG"; then
+                  echo "Failed to import source server configuration" >> /opt/jfrog/init.log
+                  exit 1
+                fi
+                
+                echo "Importing target server configuration..." >> /opt/jfrog/init.log
+                TARGET_CONFIG=$(echo "$TARGET_SERVER_CONFIG" | base64)
+                if ! jf c import "$TARGET_CONFIG"; then
+                  echo "Failed to import target server configuration" >> /opt/jfrog/init.log
+                  exit 1
+                fi
+          
+                echo "postStart hook completed successfully" >> /opt/jfrog/init.log
+                touch /opt/jfrog/initialized
+                exit 0
+      volumes:
+      - name: jfrog-data
+        persistentVolumeClaim:
+          claimName: artifactory-volume-artifactory-0 
