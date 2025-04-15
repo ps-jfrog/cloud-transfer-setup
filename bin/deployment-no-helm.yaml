@@ -1,0 +1,118 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jfrog-transfer
+  labels:
+    app: jfrog-transfer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jfrog-transfer
+  template:
+    metadata:
+      labels:
+        app: jfrog-transfer
+    spec:
+      containers:
+      - name: jfrog-transfer
+        image: releases-docker.jfrog.io/jfrog/jfrog-cli-full-v2-jf
+        command: ["/bin/sh", "-c", "tail -f /dev/null"]
+        volumeMounts:
+        - name: jfrog-data
+          mountPath: /opt/jfrog
+        env:
+        - name: SOURCE_SERVER_CONFIG
+          valueFrom:
+            secretKeyRef:
+              name: jfrog-secrets
+              key: source-server-config
+        - name: TARGET_SERVER_CONFIG
+          valueFrom:
+            secretKeyRef:
+              name: jfrog-secrets
+              key: target-server-config
+        readinessProbe:
+          exec:
+            command:
+            - cat
+            - /opt/jfrog/init.log
+          initialDelaySeconds: 10
+          periodSeconds: 5
+        lifecycle:
+          postStart:
+            exec:
+              command:
+              - /bin/sh
+              - -c
+              - |
+                set -x
+                echo "Starting postStart hook" > /opt/jfrog/init.log
+                
+                echo "Importing source server configuration..." >> /opt/jfrog/init.log
+                SOURCE_CONFIG=$(echo "$SOURCE_SERVER_CONFIG" | base64)
+                if ! jf c import "$SOURCE_CONFIG"; then
+                  echo "Failed to import source server configuration" >> /opt/jfrog/init.log
+                  exit 1
+                fi
+                
+                echo "Importing target server configuration..." >> /opt/jfrog/init.log
+                TARGET_CONFIG=$(echo "$TARGET_SERVER_CONFIG" | base64)
+                if ! jf c import "$TARGET_CONFIG"; then
+                  echo "Failed to import target server configuration" >> /opt/jfrog/init.log
+                  exit 1
+                fi
+
+                # Preview the configuration
+                echo "Previewing the configuration..." >> /opt/jfrog/init.log
+                if ! jf c s; then
+                  echo "Failed to preview the configuration" >> /opt/jfrog/init.log
+                  exit 1
+                fi
+
+                # Verify connectivity
+                echo "Verifying connectivity..." >> /opt/jfrog/init.log
+                if ! jf rt ping --server-id source-server; then
+                  echo "Source server is not reachable" >> /opt/jfrog/init.log
+                  exit 1
+                fi
+                
+                if ! jf rt ping --server-id target-server; then
+                  echo "Target server is not reachable" >> /opt/jfrog/init.log
+                  exit 1
+                fi                
+
+                mkdir -p /opt/jfrog/etc/artifactory/plugins/lib
+                
+                echo "Downloading transfer plugin files..." >> /opt/jfrog/init.log
+                if ! curl -k -O -g https://releases.jfrog.io/artifactory/jfrog-releases/data-transfer/[RELEASE]/lib/data-transfer.jar; then
+                  mv data-transfer.jar /opt/jfrog/etc/artifactory/plugins/lib/
+                  echo "Failed to download data-transfer.jar" >> /opt/jfrog/init.log
+                  exit 1
+                fi
+                
+                if ! curl -k -O -g https://releases.jfrog.io/artifactory/jfrog-releases/data-transfer/[RELEASE]/dataTransfer.groovy; then
+                  mv dataTransfer.groovy /opt/jfrog/etc/artifactory/plugins/
+                  echo "Failed to download dataTransfer.groovy" >> /opt/jfrog/init.log
+                  exit 1
+                fi
+                
+                echo "Reloading transfer plugin..." >> /opt/jfrog/init.log
+                if ! jf rt curl /api/plugins/reload --server-id source-server; then
+                  echo "Failed to reload transfer plugin" >> /opt/jfrog/init.log
+                  exit 1
+                fi
+
+                # echo "Installing transfer plugin..." >> /opt/jfrog/init.log
+                # if ! jf rt transfer-plugin-install source-server; then
+                #   echo "Failed to install transfer plugin" >> /opt/jfrog/init.log
+                #   exit 1
+                # fi
+
+                echo "postStart hook completed successfully" >> /opt/jfrog/init.log
+                touch /opt/jfrog/initialized
+                exit 0
+      volumes:
+      - name: jfrog-data
+        persistentVolumeClaim:
+          claimName: artifactory-volume-artifactory-0 
