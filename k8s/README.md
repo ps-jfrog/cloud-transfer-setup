@@ -9,7 +9,7 @@ Config Tokens are provided by secrets that populate SOURCE_SERVER_CONFIG and TAR
 
 1. Set required environment variables:
 ```bash
-export SOURCE_URL="export SOURCE_URL="http://artifactory.artifactory.svc.cluster.local:8082" \
+export SOURCE_URL="http://artifactory.artifactory.svc.cluster.local:8082" \
 export SOURCE_ACCESS_TOKEN="your-source-access-token" \
 export TARGET_URL="http://jfrog-platform-artifactory.jfrog-platform.svc.cluster.local:8082" \
 export TARGET_ACCESS_TOKEN="your-target-access-token" 
