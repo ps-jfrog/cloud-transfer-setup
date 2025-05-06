@@ -1,0 +1,53 @@
+# HELP jfob_app_disk_free_bytes Free bytes for app home directory disk device
+# TYPE jfob_app_disk_free_bytes gauge
+jfob_app_disk_free_bytes 4087000805376 1746486779296
+# HELP jfob_app_disk_used_bytes Used bytes for app home directory disk device
+# TYPE jfob_app_disk_used_bytes gauge
+jfob_app_disk_used_bytes 2303474806784 1746486779296
+# HELP jfob_app_io_counters_write_bytes Process io total write bytes
+# TYPE jfob_app_io_counters_write_bytes gauge
+jfob_app_io_counters_write_bytes 53248 1746486779296
+# HELP jfob_app_io_counters_read_bytes Process io total read bytes
+# TYPE jfob_app_io_counters_read_bytes gauge
+jfob_app_io_counters_read_bytes 249856 1746486779296
+# HELP jfob_app_self_metrics_calc_seconds Total time to collect all metrics
+# TYPE jfob_app_self_metrics_calc_seconds gauge
+jfob_app_self_metrics_calc_seconds 0.050988324 1746486779296
+# HELP jfob_app_self_metrics_total Count of collected metrics
+# TYPE jfob_app_self_metrics_total gauge
+jfob_app_self_metrics_total 17 1746486779296
+# HELP jfob_go_memstats_heap_in_use_bytes Process go heap bytes in use
+# TYPE jfob_go_memstats_heap_in_use_bytes gauge
+jfob_go_memstats_heap_in_use_bytes 8437760 1746486779296
+# HELP jfob_go_memstats_heap_allocated_bytes Process go heap allocated bytes
+# TYPE jfob_go_memstats_heap_allocated_bytes gauge
+jfob_go_memstats_heap_allocated_bytes 4895760 1746486779296
+# HELP jfob_go_memstats_heap_idle_bytes Process go heap idle bytes
+# TYPE jfob_go_memstats_heap_idle_bytes gauge
+jfob_go_memstats_heap_idle_bytes 3129344 1746486779296
+# HELP jfob_go_memstats_heap_objects_total Process go heap number of objects
+# TYPE jfob_go_memstats_heap_objects_total gauge
+jfob_go_memstats_heap_objects_total 23976 1746486779296
+# HELP jfob_go_memstats_heap_reserved_bytes Process go heap reserved bytes
+# TYPE jfob_go_memstats_heap_reserved_bytes gauge
+jfob_go_memstats_heap_reserved_bytes 11567104 1746486779296
+# HELP jfob_go_memstats_gc_cpu_fraction_ratio Process go cpu used by gc. value is between 0 and 1
+# TYPE jfob_go_memstats_gc_cpu_fraction_ratio gauge
+jfob_go_memstats_gc_cpu_fraction_ratio 3.162623349444989e-05 1746486779296
+# HELP jfob_go_routines_total Number of goroutines that currently exist
+# TYPE jfob_go_routines_total gauge
+jfob_go_routines_total 40 1746486779296
+# TYPE jfob_sys_cpu_ratio gauge
+jfob_sys_cpu_ratio 0.25609756316402393 1746486779296
+# HELP jfob_sys_load_1 Host load average in the last minute
+jfob_sys_load_1 4.12 1746486779296
+# HELP jfob_sys_load_5 Host load average in the last 5 minutes
+jfob_sys_load_5 6.83 1746486779296
+# HELP jfob_sys_load_15 Host load average in the last 15 minutes
+jfob_sys_load_15 4.73 1746486779296
+# HELP jfob_sys_memory_used_bytes Host used virtual memory
+# TYPE jfob_sys_memory_used_bytes gauge
+jfob_sys_memory_used_bytes 69427261440 1746486779296
+# HELP jfob_sys_memory_free_bytes Host free virtual memory
+# TYPE jfob_sys_memory_free_bytes gauge
+jfob_sys_memory_free_bytes 52273995776 1746486779296

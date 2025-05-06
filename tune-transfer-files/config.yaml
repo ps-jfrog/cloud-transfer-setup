@@ -1,0 +1,25 @@
+# Artifactory Configuration
+artifactory:
+  url: "https://<your-domain>.jfrog.io/artifactory"
+  access_token: "your-access-token"
+
+# Thread Configuration
+threads:
+  step: 64
+  min: 8
+  max: 1024
+
+# Monitoring Configuration
+monitoring:
+  check_interval: 300  # seconds
+
+# Thresholds
+thresholds:
+  cpu:
+    low: 0.40
+    high: 0.85
+  heap:
+    low: 0.60
+    high: 0.85
+  db_connections:
+    high: 0.90 

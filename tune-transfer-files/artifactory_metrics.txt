@@ -1,0 +1,1124 @@
+# TYPE jfsh_binaries_bytes_download_total counter
+# HELP jfsh_binaries_bytes_download_total Counts the total bytes downloaded
+jfsh_binaries_bytes_download_total{id="file-system",name="file-system"} 0 1746491338212
+# TYPE jfsh_binaries_bytes_upload_total counter
+# HELP jfsh_binaries_bytes_upload_total Counts the total bytes uploaded
+jfsh_binaries_bytes_upload_total{id="file-system",name="file-system"} 274 1746491338212
+# TYPE jfsh_binaries_download_total counter
+# HELP jfsh_binaries_download_total Counts the total binaries download
+jfsh_binaries_download_total{id="file-system",name="file-system"} 0 1746491338212
+# TYPE jfsh_binaries_download_failures_total counter
+# HELP jfsh_binaries_download_failures_total Counts the total number of failed binary download operations
+jfsh_binaries_download_failures_total 0 1746491338212
+# TYPE jfsh_binaries_download_successes_total counter
+# HELP jfsh_binaries_download_successes_total Counts the total number of successful binary download operations
+jfsh_binaries_download_successes_total 0 1746491338212
+# TYPE jfsh_binaries_upload_total counter
+# HELP jfsh_binaries_upload_total Counts the total binaries uploads
+jfsh_binaries_upload_total{id="file-system",name="file-system"} 1 1746491338212
+# TYPE jfsh_binaries_upload_failures_total counter
+# HELP jfsh_binaries_upload_failures_total Counts the total number of failed binary upload operations
+jfsh_binaries_upload_failures_total 0 1746491338212
+# TYPE jfsh_binaries_upload_internal_zero_content_length_header_total counter
+# HELP jfsh_binaries_upload_internal_zero_content_length_header_total Counts the total binaries uploads with content-length header equals to zero
+jfsh_binaries_upload_internal_zero_content_length_header_total 0 1746491338212
+# TYPE jfsh_binaries_upload_speed summary
+# HELP jfsh_binaries_upload_speed Speed of uploading a binary
+jfsh_binaries_upload_speed{id="file-system",name="file-system",quantile="0.01"} NaN 1746491338212
+jfsh_binaries_upload_speed{id="file-system",name="file-system",quantile="0.5"} NaN 1746491338212
+jfsh_binaries_upload_speed{id="file-system",name="file-system",quantile="0.99"} NaN 1746491338212
+jfsh_binaries_upload_speed_count{id="file-system",name="file-system"} 1.0 1746491338212
+jfsh_binaries_upload_speed_sum{id="file-system",name="file-system"} 30444.444444444445 1746491338212
+jfsh_binaries_upload_speed_created{id="file-system",name="file-system"} 1.746487605711E9 1746491338212
+# TYPE jfsh_binaries_upload_successes_total counter
+# HELP jfsh_binaries_upload_successes_total Counts the total number of successful binary upload operations
+jfsh_binaries_upload_successes_total 1 1746491338212
+# TYPE jfsh_multipart_upload_bytes_total counter
+# HELP jfsh_multipart_upload_bytes_total Count the total bytes uploaded in multipart upload
+jfsh_multipart_upload_bytes_total 0 1746491338212
+# TYPE jfsh_multipart_upload_status_total counter
+# HELP jfsh_multipart_upload_status_total The number of multipart upload requests categorized by their status
+jfsh_multipart_upload_status_total 0 1746491338212
+# TYPE jfsh_zero_length_binaries_upload_internal_total counter
+# HELP jfsh_zero_length_binaries_upload_internal_total Counts the total empty binaries uploads to the file store
+jfsh_zero_length_binaries_upload_internal_total 0 1746491338212
+# TYPE jfrt_repo_avg_members_total gauge
+# HELP jfrt_repo_avg_members_total The average number of members in virtual/federated repositories
+jfrt_repo_avg_members_total{package="Docker",type="Virtual"} 1.0 1746491338212
+# TYPE jfrt_repo_by_type_total gauge
+# HELP jfrt_repo_by_type_total The number of repositories by type and package type
+jfrt_repo_by_type_total{package="Generic",type="Local"} 3 1746491338212
+jfrt_repo_by_type_total{package="BuildInfo",type="Local"} 1 1746491338212
+jfrt_repo_by_type_total{package="Docker",type="Remote"} 1 1746491338212
+jfrt_repo_by_type_total{package="Docker",type="Virtual"} 1 1746491338212
+# TYPE jfrt_repo_max_members_total gauge
+# HELP jfrt_repo_max_members_total The maximal number of members in virtual/federated repositories
+jfrt_repo_max_members_total{package="Docker",type="Virtual"} 1 1746491338212
+# TYPE jfrt_db_connections_active_total gauge
+# HELP jfrt_db_connections_active_total Total Active Connections
+jfrt_db_connections_active_total 0 1746491338212
+# TYPE jfrt_db_connections_idle_total gauge
+# HELP jfrt_db_connections_idle_total Total Idle Connections
+jfrt_db_connections_idle_total 1 1746491338212
+# TYPE jfrt_db_connections_max_active_total gauge
+# HELP jfrt_db_connections_max_active_total Total Max Active Connections
+jfrt_db_connections_max_active_total 200 1746491338212
+# TYPE jfrt_db_connections_min_idle_total gauge
+# HELP jfrt_db_connections_min_idle_total Total Min Idle Connections
+jfrt_db_connections_min_idle_total 1 1746491338212
+# TYPE app_disk_free_bytes gauge
+# HELP app_disk_free_bytes Free bytes for app home directory disk device
+app_disk_free_bytes 4079213608960 1746491338212
+# TYPE app_disk_used_bytes gauge
+# HELP app_disk_used_bytes Used bytes for app home directory disk device
+app_disk_used_bytes 2311278780416 1746491338212
+# TYPE jfsh_thread_pool_active_count_total gauge
+# HELP jfsh_thread_pool_active_count_total Number of threads that are actively executing tasks
+jfsh_thread_pool_active_count_total{maxPoolSize="20.0",mergedPools="0",name="multipart-upload"} 0.0 1746491338212
+jfsh_thread_pool_active_count_total{maxPoolSize="1.0",mergedPools="0",name="cachefs-sync"} 0.0 1746491338212
+# TYPE jfsh_thread_pool_pending_tasks_total gauge
+# HELP jfsh_thread_pool_pending_tasks_total Number of tasks pending execution
+jfsh_thread_pool_pending_tasks_total{maxPoolSize="20.0",mergedPools="0",name="multipart-upload"} 0.0 1746491338212
+jfsh_thread_pool_pending_tasks_total{maxPoolSize="1.0",mergedPools="0",name="cachefs-sync"} 0.0 1746491338212
+# TYPE jfbh_rbv2_artifact_copied_seconds gauge
+# HELP jfbh_rbv2_artifact_copied_seconds RB V2 artifact copy time: percentile 50%
+jfbh_rbv2_artifact_copied_seconds{quantile="0.5"} 0.0 1746491338212
+jfbh_rbv2_artifact_copied_seconds{quantile="0.75"} 0.0 1746491338212
+jfbh_rbv2_artifact_copied_seconds{quantile="0.95"} 0.0 1746491338212
+jfbh_rbv2_artifact_copied_seconds{quantile="0.99"} 0.0 1746491338212
+jfbh_rbv2_artifact_copied_seconds{type="std"} 0.0 1746491338212
+# TYPE jfbh_rbv2_artifacts_total gauge
+# HELP jfbh_rbv2_artifacts_total RB V2 artifacts: percentile 50%
+jfbh_rbv2_artifacts_total{quantile="0.5"} 0.0 1746491338212
+jfbh_rbv2_artifacts_total{quantile="0.75"} 0.0 1746491338212
+jfbh_rbv2_artifacts_total{quantile="0.95"} 0.0 1746491338212
+jfbh_rbv2_artifacts_total{quantile="0.99"} 0.0 1746491338212
+jfbh_rbv2_artifacts_total{type="std"} 0.0 1746491338212
+# TYPE jfbh_rbv2_blocked_expired_keys_total counter
+# HELP jfbh_rbv2_blocked_expired_keys_total RB V2 blocked by expired key counts
+jfbh_rbv2_blocked_expired_keys_total{events="blocked_promotions"} 0 1746491338212
+jfbh_rbv2_blocked_expired_keys_total{events="blocked_distributions"} 0 1746491338212
+jfbh_rbv2_blocked_expired_keys_total{events="blocked_creations"} 0 1746491338212
+# TYPE jfbh_rbv2_bundle_operations_total counter
+# HELP jfbh_rbv2_bundle_operations_total RB V2 bundle operations
+jfbh_rbv2_bundle_operations_total{operation="delete_bundle"} 0 1746491338212
+jfbh_rbv2_bundle_operations_total{operation="delete_received_bundle"} 0 1746491338212
+jfbh_rbv2_bundle_operations_total{operation="create_bundle"} 0 1746491338212
+# TYPE jfbh_rbv2_creation_agents_total counter
+# HELP jfbh_rbv2_creation_agents_total RB V2 creation agents
+jfbh_rbv2_creation_agents_total{source_agent="api"} 0 1746491338212
+jfbh_rbv2_creation_agents_total{source_agent="cli"} 0 1746491338212
+jfbh_rbv2_creation_agents_total{source_agent="browser"} 0 1746491338212
+jfbh_rbv2_creation_agents_total{source_agent="system"} 0 1746491338212
+# TYPE jfbh_rbv2_creation_methods_total counter
+# HELP jfbh_rbv2_creation_methods_total RB V2 creation methods
+jfbh_rbv2_creation_methods_total{source_method="release_bundles"} 0 1746491338212
+jfbh_rbv2_creation_methods_total{source_method="artifacts"} 0 1746491338212
+jfbh_rbv2_creation_methods_total{source_method="builds"} 0 1746491338212
+jfbh_rbv2_creation_methods_total{source_method="aql"} 0 1746491338212
+# TYPE jfbh_rbv2_deletion_agents_total counter
+# HELP jfbh_rbv2_deletion_agents_total RB V2 deletion agents
+jfbh_rbv2_deletion_agents_total{source_agent="api"} 0 1746491338212
+jfbh_rbv2_deletion_agents_total{source_agent="cli"} 0 1746491338212
+jfbh_rbv2_deletion_agents_total{source_agent="browser"} 0 1746491338212
+jfbh_rbv2_deletion_agents_total{source_agent="system"} 0 1746491338212
+# TYPE jfbh_rbv2_promotion_created_seconds gauge
+# HELP jfbh_rbv2_promotion_created_seconds RB V2 promotion creation time: percentile 50%
+jfbh_rbv2_promotion_created_seconds{quantile="0.5"} 0.0 1746491338212
+jfbh_rbv2_promotion_created_seconds{quantile="0.75"} 0.0 1746491338212
+jfbh_rbv2_promotion_created_seconds{quantile="0.95"} 0.0 1746491338212
+jfbh_rbv2_promotion_created_seconds{quantile="0.99"} 0.0 1746491338212
+jfbh_rbv2_promotion_created_seconds{type="std"} 0.0 1746491338212
+# TYPE jfbh_rbv2_promotion_creation_agents_total counter
+# HELP jfbh_rbv2_promotion_creation_agents_total RB V2 promotion creation agents
+jfbh_rbv2_promotion_creation_agents_total{source_agent="api"} 0 1746491338212
+jfbh_rbv2_promotion_creation_agents_total{source_agent="cli"} 0 1746491338212
+jfbh_rbv2_promotion_creation_agents_total{source_agent="browser"} 0 1746491338212
+jfbh_rbv2_promotion_creation_agents_total{source_agent="system"} 0 1746491338212
+# TYPE jfbh_rbv2_promotion_deleted_seconds gauge
+# HELP jfbh_rbv2_promotion_deleted_seconds RB V2 promotion deletion time: percentile 50%
+jfbh_rbv2_promotion_deleted_seconds{quantile="0.5"} 0.0 1746491338212
+jfbh_rbv2_promotion_deleted_seconds{quantile="0.75"} 0.0 1746491338212
+jfbh_rbv2_promotion_deleted_seconds{quantile="0.95"} 0.0 1746491338212
+jfbh_rbv2_promotion_deleted_seconds{quantile="0.99"} 0.0 1746491338212
+jfbh_rbv2_promotion_deleted_seconds{type="std"} 0.0 1746491338212
+# TYPE jfbh_rbv2_promotion_deletion_agents_total counter
+# HELP jfbh_rbv2_promotion_deletion_agents_total RB V2 promotion deletion agents
+jfbh_rbv2_promotion_deletion_agents_total{source_agent="api"} 0 1746491338212
+jfbh_rbv2_promotion_deletion_agents_total{source_agent="cli"} 0 1746491338212
+jfbh_rbv2_promotion_deletion_agents_total{source_agent="browser"} 0 1746491338212
+jfbh_rbv2_promotion_deletion_agents_total{source_agent="system"} 0 1746491338212
+# TYPE jfbh_rbv2_promotion_operations_total counter
+# HELP jfbh_rbv2_promotion_operations_total RB V2 promotion operations
+jfbh_rbv2_promotion_operations_total{operation="create_targets_promotion"} 0 1746491338212
+jfbh_rbv2_promotion_operations_total{operation="delete_targets_promotion"} 0 1746491338212
+jfbh_rbv2_promotion_operations_total{operation="create_promotion"} 0 1746491338212
+jfbh_rbv2_promotion_operations_total{operation="delete_promotion"} 0 1746491338212
+# TYPE jfbh_rbv2_promotion_xray_status_total counter
+# HELP jfbh_rbv2_promotion_xray_status_total RB V2 promotion xray status
+jfbh_rbv2_promotion_xray_status_total{status="promotion_approved"} 0 1746491338212
+jfbh_rbv2_promotion_xray_status_total{status="promotion_rejected"} 0 1746491338212
+# TYPE jfbh_rbv2_promotions_total gauge
+# HELP jfbh_rbv2_promotions_total RB V2 promotions
+jfbh_rbv2_promotions_total 0 1746491338212
+# TYPE jfbh_rbv2_promotions_completed_total gauge
+# HELP jfbh_rbv2_promotions_completed_total RB V2 promotions completed
+jfbh_rbv2_promotions_completed_total 0 1746491338212
+# TYPE jfbh_rbv2_promotions_failed_total gauge
+# HELP jfbh_rbv2_promotions_failed_total RB V2 promotions failed
+jfbh_rbv2_promotions_failed_total 0 1746491338212
+# TYPE jfbh_rbv2_properties_total gauge
+# HELP jfbh_rbv2_properties_total RB V2 properties: percentile 50%
+jfbh_rbv2_properties_total{quantile="0.5"} 0.0 1746491338212
+jfbh_rbv2_properties_total{quantile="0.75"} 0.0 1746491338212
+jfbh_rbv2_properties_total{quantile="0.95"} 0.0 1746491338212
+jfbh_rbv2_properties_total{quantile="0.99"} 0.0 1746491338212
+jfbh_rbv2_properties_total{type="std"} 0.0 1746491338212
+# TYPE jfbh_rbv2_release_bundles_total gauge
+# HELP jfbh_rbv2_release_bundles_total RB V2 release bundles
+jfbh_rbv2_release_bundles_total 0 1746491338212
+# TYPE jfbh_rbv2_release_bundles_completed_total gauge
+# HELP jfbh_rbv2_release_bundles_completed_total RB V2 release bundles completed
+jfbh_rbv2_release_bundles_completed_total 0 1746491338212
+# TYPE jfbh_rbv2_release_bundles_failed_total gauge
+# HELP jfbh_rbv2_release_bundles_failed_total RB V2 release bundles failed
+jfbh_rbv2_release_bundles_failed_total 0 1746491338212
+# TYPE jfbh_rbv2_targets_promotion_created_seconds gauge
+# HELP jfbh_rbv2_targets_promotion_created_seconds RB V2 promotion targets creation time: percentile 50%
+jfbh_rbv2_targets_promotion_created_seconds{quantile="0.5"} 0.0 1746491338212
+jfbh_rbv2_targets_promotion_created_seconds{quantile="0.75"} 0.0 1746491338212
+jfbh_rbv2_targets_promotion_created_seconds{quantile="0.95"} 0.0 1746491338212
+jfbh_rbv2_targets_promotion_created_seconds{quantile="0.99"} 0.0 1746491338212
+jfbh_rbv2_targets_promotion_created_seconds{type="std"} 0.0 1746491338212
+# TYPE jfbh_rbv2_version_created_seconds gauge
+# HELP jfbh_rbv2_version_created_seconds RB V2 version creation time: percentile 50%
+jfbh_rbv2_version_created_seconds{quantile="0.5"} 0.0 1746491338212
+jfbh_rbv2_version_created_seconds{quantile="0.75"} 0.0 1746491338212
+jfbh_rbv2_version_created_seconds{quantile="0.95"} 0.0 1746491338212
+jfbh_rbv2_version_created_seconds{quantile="0.99"} 0.0 1746491338212
+jfbh_rbv2_version_created_seconds{type="std"} 0.0 1746491338212
+# TYPE jfbh_rbv2_version_deleted_seconds gauge
+# HELP jfbh_rbv2_version_deleted_seconds RB V2 version deletion time: percentile 50%
+jfbh_rbv2_version_deleted_seconds{quantile="0.5"} 0.0 1746491338212
+jfbh_rbv2_version_deleted_seconds{quantile="0.75"} 0.0 1746491338212
+jfbh_rbv2_version_deleted_seconds{quantile="0.95"} 0.0 1746491338212
+jfbh_rbv2_version_deleted_seconds{quantile="0.99"} 0.0 1746491338212
+jfbh_rbv2_version_deleted_seconds{type="std"} 0.0 1746491338212
+# TYPE jfrt_events_gc_binaries_deleted_total counter
+# HELP jfrt_events_gc_binaries_deleted_total Total number of binaries removed by Garbage Collection
+jfrt_events_gc_binaries_deleted_total{type="EVENTS_GC"} 0 1746491338212
+# TYPE jfrt_events_gc_deduped_events_total counter
+# HELP jfrt_events_gc_deduped_events_total Total number of deduped events
+jfrt_events_gc_deduped_events_total{type="EVENTS_GC"} 0 1746491338212
+# TYPE jfrt_events_gc_events_total counter
+# HELP jfrt_events_gc_events_total Total number of event
+jfrt_events_gc_events_total{type="EVENTS_GC"} 0 1746491338212
+# TYPE jfrt_events_gc_failures_total counter
+# HELP jfrt_events_gc_failures_total Total number of binaries that Garbage Collection failed to remove
+jfrt_events_gc_failures_total{type="EVENTS_GC"} 0 1746491338212
+# TYPE jfrt_events_gc_retry_exhausted_total counter
+# HELP jfrt_events_gc_retry_exhausted_total Total number of binaries that Garbage Collection gave up to remove
+jfrt_events_gc_retry_exhausted_total{type="EVENTS_GC"} 0 1746491338212
+# TYPE jfrt_events_gc_size_cleaned_bytes gauge
+# HELP jfrt_events_gc_size_cleaned_bytes Total Bytes recovered by Garbage Collection
+jfrt_events_gc_size_cleaned_bytes{type="EVENTS_GC"} 0 1746491338212
+# TYPE jfrt_events_gc_squashed_events_total counter
+# HELP jfrt_events_gc_squashed_events_total Total number of events skipped due to squashing
+jfrt_events_gc_squashed_events_total{type="EVENTS_GC"} 0 1746491338212
+# TYPE jfrt_events_gc_waiting_total gauge
+# HELP jfrt_events_gc_waiting_total Total number of waiting event
+jfrt_events_gc_waiting_total{type="EVENTS_GC"} 0 1746491338212
+# TYPE jfrt_runtime_heap_freememory_bytes gauge
+# HELP jfrt_runtime_heap_freememory_bytes Free Memory
+jfrt_runtime_heap_freememory_bytes 229569840 1746491338212
+# TYPE jfrt_runtime_heap_maxmemory_bytes gauge
+# HELP jfrt_runtime_heap_maxmemory_bytes Max Memory
+jfrt_runtime_heap_maxmemory_bytes 2147483648 1746491338212
+# TYPE jfrt_runtime_heap_processors_total counter
+# HELP jfrt_runtime_heap_processors_total Available Processors
+jfrt_runtime_heap_processors_total 16 1746491338212
+# TYPE jfrt_runtime_heap_totalmemory_bytes gauge
+# HELP jfrt_runtime_heap_totalmemory_bytes Total Memory
+jfrt_runtime_heap_totalmemory_bytes 544210944 1746491338212
+# TYPE jfrt_projects_active_total counter
+# HELP jfrt_projects_active_total Projects Amount
+jfrt_projects_active_total 0 1746491338212
+# TYPE jfrt_artifacts_gc_next_run_seconds gauge
+# HELP jfrt_artifacts_gc_next_run_seconds Next GC Run
+jfrt_artifacts_gc_next_run_seconds 14344 1746491338212
+# TYPE jfrt_stg_summary_checkpoint_binaries_total gauge
+# HELP jfrt_stg_summary_checkpoint_binaries_total The number of all binaries at last checkpoint
+jfrt_stg_summary_checkpoint_binaries_total 17 1746491338212
+# TYPE jfrt_stg_summary_checkpoint_binaries_size_bytes gauge
+# HELP jfrt_stg_summary_checkpoint_binaries_size_bytes The size of all binaries at last checkpoint
+jfrt_stg_summary_checkpoint_binaries_size_bytes 6796575 1746491338212
+# TYPE jfrt_stg_summary_checkpoint_time_total gauge
+# HELP jfrt_stg_summary_checkpoint_time_total The UNIX timestamp of the last storage summary checkpoint
+jfrt_stg_summary_checkpoint_time_total 1746484565517 1746491338212
+# TYPE jfrt_stg_summary_files_total gauge
+# HELP jfrt_stg_summary_files_total The total number of files stored in all repositories
+jfrt_stg_summary_files_total 17 1746491338212
+# TYPE jfrt_stg_summary_folders_total gauge
+# HELP jfrt_stg_summary_folders_total The total number of folders stored in all repositories
+jfrt_stg_summary_folders_total 7 1746491338212
+# TYPE jfrt_stg_summary_project_count_total gauge
+# HELP jfrt_stg_summary_project_count_total The total number of projects
+jfrt_stg_summary_project_count_total 1 1746491338212
+# TYPE jfrt_stg_summary_project_files_total gauge
+# HELP jfrt_stg_summary_project_files_total The total number of files in all projects
+jfrt_stg_summary_project_files_total 17 1746491338212
+# TYPE jfrt_stg_summary_project_max_files_total gauge
+# HELP jfrt_stg_summary_project_max_files_total The maximal number of files in a single project
+jfrt_stg_summary_project_max_files_total 17.0 1746491338212
+# TYPE jfrt_stg_summary_project_max_size_bytes gauge
+# HELP jfrt_stg_summary_project_max_size_bytes The maximal size of a project (in bytes)
+jfrt_stg_summary_project_max_size_bytes 6796751 1746491338212
+# TYPE jfrt_stg_summary_project_size_bytes gauge
+# HELP jfrt_stg_summary_project_size_bytes The total size of files in all projects
+jfrt_stg_summary_project_size_bytes 6796751 1746491338212
+# TYPE jfrt_stg_summary_repo_count_total gauge
+# HELP jfrt_stg_summary_repo_count_total The number of repositories (from storage stats)
+jfrt_stg_summary_repo_count_total{package="Docker",type="VIRTUAL"} 1 1746491338212
+jfrt_stg_summary_repo_count_total{package="NA",type="NA"} 2 1746491338212
+jfrt_stg_summary_repo_count_total{package="Docker",type="CACHE"} 1 1746491338212
+jfrt_stg_summary_repo_count_total{package="BuildInfo",type="LOCAL"} 1 1746491338212
+jfrt_stg_summary_repo_count_total{package="Generic",type="LOCAL"} 3 1746491338212
+# TYPE jfrt_stg_summary_repo_files_total gauge
+# HELP jfrt_stg_summary_repo_files_total The total number of files per repository type
+jfrt_stg_summary_repo_files_total{package="Docker",type="VIRTUAL"} 0 1746491338212
+jfrt_stg_summary_repo_files_total{package="NA",type="NA"} 0 1746491338212
+jfrt_stg_summary_repo_files_total{package="Docker",type="CACHE"} 8 1746491338212
+jfrt_stg_summary_repo_files_total{package="BuildInfo",type="LOCAL"} 0 1746491338212
+jfrt_stg_summary_repo_files_total{package="Generic",type="LOCAL"} 9 1746491338212
+# TYPE jfrt_stg_summary_repo_folders_total gauge
+# HELP jfrt_stg_summary_repo_folders_total The total number of folders per repository type
+jfrt_stg_summary_repo_folders_total{package="Docker",type="VIRTUAL"} 0 1746491338212
+jfrt_stg_summary_repo_folders_total{package="NA",type="NA"} 0 1746491338212
+jfrt_stg_summary_repo_folders_total{package="Docker",type="CACHE"} 4 1746491338212
+jfrt_stg_summary_repo_folders_total{package="BuildInfo",type="LOCAL"} 0 1746491338212
+jfrt_stg_summary_repo_folders_total{package="Generic",type="LOCAL"} 3 1746491338212
+# TYPE jfrt_stg_summary_repo_max_files_total gauge
+# HELP jfrt_stg_summary_repo_max_files_total The maximum number of files per repository type
+jfrt_stg_summary_repo_max_files_total{package="Docker",type="VIRTUAL"} 0 1746491338212
+jfrt_stg_summary_repo_max_files_total{package="NA",type="NA"} 0 1746491338212
+jfrt_stg_summary_repo_max_files_total{package="Docker",type="CACHE"} 8 1746491338212
+jfrt_stg_summary_repo_max_files_total{package="BuildInfo",type="LOCAL"} 0 1746491338212
+jfrt_stg_summary_repo_max_files_total{package="Generic",type="LOCAL"} 9 1746491338212
+# TYPE jfrt_stg_summary_repo_max_folders_total gauge
+# HELP jfrt_stg_summary_repo_max_folders_total The maximum number of folders per repository type
+jfrt_stg_summary_repo_max_folders_total{package="Docker",type="VIRTUAL"} 0 1746491338212
+jfrt_stg_summary_repo_max_folders_total{package="NA",type="NA"} 0 1746491338212
+jfrt_stg_summary_repo_max_folders_total{package="Docker",type="CACHE"} 4 1746491338212
+jfrt_stg_summary_repo_max_folders_total{package="BuildInfo",type="LOCAL"} 0 1746491338212
+jfrt_stg_summary_repo_max_folders_total{package="Generic",type="LOCAL"} 3 1746491338212
+# TYPE jfrt_stg_summary_repo_max_size_bytes gauge
+# HELP jfrt_stg_summary_repo_max_size_bytes The maximum storage size (in bytes) per repository type
+jfrt_stg_summary_repo_max_size_bytes{package="Docker",type="VIRTUAL"} 0 1746491338212
+jfrt_stg_summary_repo_max_size_bytes{package="NA",type="NA"} 0 1746491338212
+jfrt_stg_summary_repo_max_size_bytes{package="Docker",type="CACHE"} 6795741 1746491338212
+jfrt_stg_summary_repo_max_size_bytes{package="BuildInfo",type="LOCAL"} 0 1746491338212
+jfrt_stg_summary_repo_max_size_bytes{package="Generic",type="LOCAL"} 834 1746491338212
+# TYPE jfrt_stg_summary_repo_size_bytes gauge
+# HELP jfrt_stg_summary_repo_size_bytes The total storage size (in bytes), per repository type
+jfrt_stg_summary_repo_size_bytes{package="Docker",type="VIRTUAL"} 0 1746491338212
+jfrt_stg_summary_repo_size_bytes{package="NA",type="NA"} 0 1746491338212
+jfrt_stg_summary_repo_size_bytes{package="Docker",type="CACHE"} 6795741 1746491338212
+jfrt_stg_summary_repo_size_bytes{package="BuildInfo",type="LOCAL"} 0 1746491338212
+jfrt_stg_summary_repo_size_bytes{package="Generic",type="LOCAL"} 834 1746491338212
+# TYPE jfrt_stg_summary_size_bytes gauge
+# HELP jfrt_stg_summary_size_bytes The total size of all artifacts stored in all repositories
+jfrt_stg_summary_size_bytes 6796575 1746491338212
+# TYPE jfrt_artifacts_gc_binaries_total gauge
+# HELP jfrt_artifacts_gc_binaries_total Total number of binaries removed by Garbage Collection
+jfrt_artifacts_gc_binaries_total{end="1746489600242",start="1746489600237",status="COMPLETED",type="TRASH_AND_BINARIES"} 0 1746491338212
+# TYPE jfrt_artifacts_gc_duration_seconds gauge
+# HELP jfrt_artifacts_gc_duration_seconds Time taken for garbage collection
+jfrt_artifacts_gc_duration_seconds{end="1746489600242",start="1746489600237",status="COMPLETED",type="TRASH_AND_BINARIES"} 0.005 1746491338212
+# TYPE jfrt_artifacts_gc_size_cleaned_bytes gauge
+# HELP jfrt_artifacts_gc_size_cleaned_bytes Total Bytes recovered by Garbage Collection
+jfrt_artifacts_gc_size_cleaned_bytes{end="1746489600242",start="1746489600237",status="COMPLETED",type="TRASH_AND_BINARIES"} 0 1746491338212
+# TYPE tomcat_global_request_max_seconds gauge
+# HELP tomcat_global_request_max_seconds  
+tomcat_global_request_max_seconds{application="Artifactory",name="http-nio-127.0.0.1-8091"} 0.058
+tomcat_global_request_max_seconds{application="Artifactory",name="http-nio-8081"} 0.486
+# TYPE workqueue_execution_duration_seconds summary
+# HELP workqueue_execution_duration_seconds The queue's execution duration
+workqueue_execution_duration_seconds_count{application="Artifactory",ex="",name="Persistent Queue Triggering",size="1"} 2.0
+workqueue_execution_duration_seconds_sum{application="Artifactory",ex="",name="Persistent Queue Triggering",size="1"} 0.048
+# TYPE workqueue_execution_duration_seconds_max gauge
+# HELP workqueue_execution_duration_seconds_max The queue's execution duration
+workqueue_execution_duration_seconds_max{application="Artifactory",ex="",name="Persistent Queue Triggering",size="1"} 0.0
+# TYPE tomcat_cache_hit counter
+# HELP tomcat_cache_hit  
+tomcat_cache_hit_total{application="Artifactory"} 0.0
+# TYPE jvm_buffer_total_capacity_bytes gauge
+# HELP jvm_buffer_total_capacity_bytes An estimate of the total capacity of the buffers in this pool
+jvm_buffer_total_capacity_bytes{application="Artifactory",id="direct"} 3.0638389E7
+jvm_buffer_total_capacity_bytes{application="Artifactory",id="mapped"} 0.0
+jvm_buffer_total_capacity_bytes{application="Artifactory",id="mapped - 'non-volatile memory'"} 0.0
+# TYPE tomcat_connections_keepalive_current_connections gauge
+# HELP tomcat_connections_keepalive_current_connections  
+tomcat_connections_keepalive_current_connections{application="Artifactory",name="http-nio-127.0.0.1-8091"} 0.0
+tomcat_connections_keepalive_current_connections{application="Artifactory",name="http-nio-8081"} 1.0
+# TYPE db_query_by_trigger_seconds summary
+# HELP db_query_by_trigger_seconds Time spent executing DB queries - aggregated by source activity
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_FILE_LIST_TASKS_JOB"} 154.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_FILE_LIST_TASKS_JOB"} 0.090180676
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/CLEANUP_REPORT_EXPIRED_ORPHANED"} 1.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/CLEANUP_REPORT_EXPIRED_ORPHANED"} 0.001219529
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_AUTO_HEALING"} 1145.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_AUTO_HEALING"} 0.376647353
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="async/api"} 477.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="async/api"} 0.21648497
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_FULLSYNC_TASK"} 229.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_FULLSYNC_TASK"} 0.115447239
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/QUARTZ_TASK_HISTORY_EXPIRED_AND_ORPHANED_MARKER"} 3.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/QUARTZ_TASK_HISTORY_EXPIRED_AND_ORPHANED_MARKER"} 0.008980037
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="work/Persistent Queue Triggering"} 6.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="work/Persistent Queue Triggering"} 0.017514495
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/AIR_GAP_RECOVERY"} 15.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/AIR_GAP_RECOVERY"} 0.011946058
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/TMP_EVENT_LOG_TRUNCATE"} 6.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/TMP_EVENT_LOG_TRUNCATE"} 0.046783784
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/HUGGING_FACE_UPLOADS_FOLDER_CLEANUP"} 1.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/HUGGING_FACE_UPLOADS_FOLDER_CLEANUP"} 0.008701417
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_FULL_SYNC_SYSTEM_REPO_CLEAN_UP_JOB"} 1.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_FULL_SYNC_SYSTEM_REPO_CLEAN_UP_JOB"} 0.002155419
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="http/post"} 23.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="http/post"} 0.057585971
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger=""} 304.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger=""} 0.328724042
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/PERSISTENT_QUEUE"} 151.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/PERSISTENT_QUEUE"} 0.102684908
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/HEAVY_QUERY_CACHE_CLEANUP"} 1.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/HEAVY_QUERY_CACHE_CLEANUP"} 0.008979927
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/STORAGE_USAGE_SYNC"} 15.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/STORAGE_USAGE_SYNC"} 0.011565657
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/BINARY_STORE_GARBAGE_COLLECTOR"} 4.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/BINARY_STORE_GARBAGE_COLLECTOR"} 0.005973768
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/HEARTBEAT"} 1848.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/HEARTBEAT"} 1.028844665
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/RELEASE_BUNDLE_CLEANUP"} 3.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/RELEASE_BUNDLE_CLEANUP"} 0.002312829
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/REPO_CONFIG_PERSISTING_SERVICE"} 1.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/REPO_CONFIG_PERSISTING_SERVICE"} 8.6528E-4
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_RESET_STALE_FULL_SYNC_JOB"} 6.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_RESET_STALE_FULL_SYNC_JOB"} 0.002440821
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/NODE_EVENT_CURSOR_CLEANUP"} 1.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/NODE_EVENT_CURSOR_CLEANUP"} 4.0936E-4
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/JOB_TABLE_CLEANUP"} 1.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/JOB_TABLE_CLEANUP"} 0.004094879
+db_query_by_trigger_seconds_count{application="Artifactory",cluster="c7e",pkg="none",trigger="job/EVENT_LOG_CLEANUP"} 6.0
+db_query_by_trigger_seconds_sum{application="Artifactory",cluster="c7e",pkg="none",trigger="job/EVENT_LOG_CLEANUP"} 0.006471099
+# TYPE db_query_by_trigger_seconds_max gauge
+# HELP db_query_by_trigger_seconds_max Time spent executing DB queries - aggregated by source activity
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_FILE_LIST_TASKS_JOB"} 7.26809E-4
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/CLEANUP_REPORT_EXPIRED_ORPHANED"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_AUTO_HEALING"} 5.5854E-4
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="async/api"} 5.41529E-4
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_FULLSYNC_TASK"} 6.5479E-4
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/QUARTZ_TASK_HISTORY_EXPIRED_AND_ORPHANED_MARKER"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="work/Persistent Queue Triggering"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/AIR_GAP_RECOVERY"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/TMP_EVENT_LOG_TRUNCATE"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/HUGGING_FACE_UPLOADS_FOLDER_CLEANUP"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_FULL_SYNC_SYSTEM_REPO_CLEAN_UP_JOB"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="http/post"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger=""} 8.4554E-4
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/PERSISTENT_QUEUE"} 8.81439E-4
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/HEAVY_QUERY_CACHE_CLEANUP"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/STORAGE_USAGE_SYNC"} 9.8241E-4
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/BINARY_STORE_GARBAGE_COLLECTOR"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/HEARTBEAT"} 8.4364E-4
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/RELEASE_BUNDLE_CLEANUP"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/REPO_CONFIG_PERSISTING_SERVICE"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/FEDERATE_RESET_STALE_FULL_SYNC_JOB"} 4.00771E-4
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/NODE_EVENT_CURSOR_CLEANUP"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/JOB_TABLE_CLEANUP"} 0.0
+db_query_by_trigger_seconds_max{application="Artifactory",cluster="c7e",pkg="none",trigger="job/EVENT_LOG_CLEANUP"} 0.0
+# TYPE process_start_time_seconds gauge
+# HELP process_start_time_seconds Start time of the process since unix epoch.
+process_start_time_seconds{application="Artifactory"} 1.7464866742E9
+# TYPE db_query_duration_seconds_max gauge
+# HELP db_query_duration_seconds_max Time spent executing DB queries
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="quartz_task_history",type="UPDATE"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="artifactory_servers",type="SELECT"} 8.4364E-4
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_event_priorities",type="SELECT"} 5.41529E-4
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="",type="TRUNCATE"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_events",type="SELECT"} 3.1765E-4
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="schema_change_log",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="unique_ids",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="artifactory_servers",type="UPDATE"} 5.97619E-4
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="release_bundle_promotion",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="artifact_bundles,bundle_files",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="file_list_tasks",type="SELECT"} 7.26809E-4
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="repository_config",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="db_properties",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="jobs",type="DELETE"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp",type="INSERT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_meta_infos",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_event_cursor",type="SELECT"} 6.5479E-4
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_props",type="INSERT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="migration_status",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="nodes",type="INSERT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="policy",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="information_schema.tables",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="release_bundle",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp",type="SELECT"} 7.4986E-4
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="release_bundle_promotion_item",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="configs",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp_p12_17",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="binaries",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="nodes",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="storage_events",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="quartz_task_history",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="binaries_tasks",type="SELECT"} 8.4554E-4
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp",type="DELETE"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp_p6_11",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="tasks",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_meta_infos",type="INSERT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_event_cursor",type="UPDATE"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="artifact_bundles,nodes",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_props,nodes",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_events_errors",type="SELECT"} 8.81439E-4
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_props",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="nodes,repository_config",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="heavy_query_cache",type="SELECT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="node_events",type="INSERT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="configs",type="UPDATE"} 7.9766E-4
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="binaries",type="INSERT"} 0.0
+db_query_duration_seconds_max{application="Artifactory",cluster="c7e",slow="n",tables="artifact_bundles",type="SELECT"} 0.0
+# TYPE db_query_duration_seconds summary
+# HELP db_query_duration_seconds Time spent executing DB queries
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="quartz_task_history",type="UPDATE"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="quartz_task_history",type="UPDATE"} 0.005169759
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="artifactory_servers",type="SELECT"} 927.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="artifactory_servers",type="SELECT"} 0.60928302
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_event_priorities",type="SELECT"} 234.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_event_priorities",type="SELECT"} 0.099769309
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="",type="TRUNCATE"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="",type="TRUNCATE"} 0.041517447
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_events",type="SELECT"} 83.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_events",type="SELECT"} 0.05726081
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="schema_change_log",type="SELECT"} 3.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="schema_change_log",type="SELECT"} 0.006066599
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="unique_ids",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="unique_ids",type="SELECT"} 0.005495318
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="artifactory_servers",type="UPDATE"} 928.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="artifactory_servers",type="UPDATE"} 0.426569713
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="release_bundle_promotion",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="release_bundle_promotion",type="SELECT"} 0.007908547
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="artifact_bundles,bundle_files",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="artifact_bundles,bundle_files",type="SELECT"} 0.007092658
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="file_list_tasks",type="SELECT"} 154.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="file_list_tasks",type="SELECT"} 0.090180676
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="repository_config",type="SELECT"} 19.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="repository_config",type="SELECT"} 0.017951008
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="db_properties",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="db_properties",type="SELECT"} 0.00131254
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="jobs",type="DELETE"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="jobs",type="DELETE"} 0.004094879
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp",type="INSERT"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp",type="INSERT"} 0.010183767
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_meta_infos",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_meta_infos",type="SELECT"} 0.002462649
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_event_cursor",type="SELECT"} 1466.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_event_cursor",type="SELECT"} 0.534413831
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_props",type="INSERT"} 5.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_props",type="INSERT"} 0.007481578
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="migration_status",type="SELECT"} 3.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="migration_status",type="SELECT"} 0.004963758
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="nodes",type="INSERT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="nodes",type="INSERT"} 0.007403788
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="policy",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="policy",type="SELECT"} 0.003565268
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="information_schema.tables",type="SELECT"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="information_schema.tables",type="SELECT"} 0.003652298
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="release_bundle",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="release_bundle",type="SELECT"} 0.009840307
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp",type="SELECT"} 158.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp",type="SELECT"} 0.147757248
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="release_bundle_promotion_item",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="release_bundle_promotion_item",type="SELECT"} 0.004380748
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="configs",type="SELECT"} 34.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="configs",type="SELECT"} 0.038288718
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp_p12_17",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp_p12_17",type="SELECT"} 6.46449E-4
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="binaries",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="binaries",type="SELECT"} 0.003714879
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="nodes",type="SELECT"} 11.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="nodes",type="SELECT"} 0.012247656
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="storage_events",type="SELECT"} 5.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="storage_events",type="SELECT"} 0.008004677
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="quartz_task_history",type="SELECT"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="quartz_task_history",type="SELECT"} 0.005029807
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="binaries_tasks",type="SELECT"} 78.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="binaries_tasks",type="SELECT"} 0.061701603
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp",type="DELETE"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp",type="DELETE"} 0.0017399
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp_p6_11",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_events_tmp_p6_11",type="SELECT"} 9.6759E-4
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="tasks",type="SELECT"} 15.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="tasks",type="SELECT"} 0.011946058
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_meta_infos",type="INSERT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_meta_infos",type="INSERT"} 0.002069189
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_event_cursor",type="UPDATE"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_event_cursor",type="UPDATE"} 0.001893309
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="artifact_bundles,nodes",type="SELECT"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="artifact_bundles,nodes",type="SELECT"} 0.001407349
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_props,nodes",type="SELECT"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_props,nodes",type="SELECT"} 0.011438956
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_events_errors",type="SELECT"} 230.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_events_errors",type="SELECT"} 0.134066198
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_props",type="SELECT"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_props",type="SELECT"} 0.001664448
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="nodes,repository_config",type="SELECT"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="nodes,repository_config",type="SELECT"} 0.012905256
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="heavy_query_cache",type="SELECT"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="heavy_query_cache",type="SELECT"} 0.014116295
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="node_events",type="INSERT"} 2.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="node_events",type="INSERT"} 0.004963638
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="configs",type="UPDATE"} 8.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="configs",type="UPDATE"} 0.007234716
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="binaries",type="INSERT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="binaries",type="INSERT"} 0.004284489
+db_query_duration_seconds_count{application="Artifactory",cluster="c7e",slow="n",tables="artifact_bundles",type="SELECT"} 1.0
+db_query_duration_seconds_sum{application="Artifactory",cluster="c7e",slow="n",tables="artifact_bundles",type="SELECT"} 9.0548E-4
+# TYPE http_time_resolve_seconds_max gauge
+# HELP http_time_resolve_seconds_max The time taken to resolve the requested resource.
+http_time_resolve_seconds_max{application="Artifactory",group="",method="POST",package="",status="200"} 0.0
+http_time_resolve_seconds_max{application="Artifactory",group="probes",method="GET",package="",status="200"} 0.0
+http_time_resolve_seconds_max{application="Artifactory",group="system/info",method="GET",package="",status="200"} 0.0
+# TYPE http_time_resolve_seconds summary
+# HELP http_time_resolve_seconds The time taken to resolve the requested resource.
+http_time_resolve_seconds_count{application="Artifactory",group="",method="POST",package="",status="200"} 3.0
+http_time_resolve_seconds_sum{application="Artifactory",group="",method="POST",package="",status="200"} 0.516
+http_time_resolve_seconds_count{application="Artifactory",group="probes",method="GET",package="",status="200"} 926.0
+http_time_resolve_seconds_sum{application="Artifactory",group="probes",method="GET",package="",status="200"} 0.479
+http_time_resolve_seconds_count{application="Artifactory",group="system/info",method="GET",package="",status="200"} 18.0
+http_time_resolve_seconds_sum{application="Artifactory",group="system/info",method="GET",package="",status="200"} 1.568
+# TYPE process_files_open_files gauge
+# HELP process_files_open_files The open file descriptor count
+process_files_open_files{application="Artifactory"} 262.0
+# TYPE jvm_memory_used_bytes gauge
+# HELP jvm_memory_used_bytes The amount of used memory
+jvm_memory_used_bytes{application="Artifactory",area="nonheap",id="Compressed Class Space"} 1.9583584E7
+jvm_memory_used_bytes{application="Artifactory",area="nonheap",id="CodeHeap 'non-profiled nmethods'"} 1.7024256E7
+jvm_memory_used_bytes{application="Artifactory",area="nonheap",id="CodeHeap 'non-nmethods'"} 2728064.0
+jvm_memory_used_bytes{application="Artifactory",area="heap",id="G1 Old Gen"} 1.69194456E8
+jvm_memory_used_bytes{application="Artifactory",area="heap",id="G1 Eden Space"} 1.32120576E8
+jvm_memory_used_bytes{application="Artifactory",area="nonheap",id="Metaspace"} 1.72217808E8
+jvm_memory_used_bytes{application="Artifactory",area="nonheap",id="CodeHeap 'profiled nmethods'"} 4.072384E7
+jvm_memory_used_bytes{application="Artifactory",area="heap",id="G1 Survivor Space"} 1.28778E7
+# TYPE pq_queue_lag gauge
+# HELP pq_queue_lag Specific queue lag time
+pq_queue_lag{application="Artifactory",queue_name="jfrog_federation_service_queue"} 0.0
+# TYPE jvm_threads_daemon_threads gauge
+# HELP jvm_threads_daemon_threads The current number of live daemon threads
+jvm_threads_daemon_threads{application="Artifactory"} 84.0
+# TYPE jvm_compilation_time_ms counter
+# HELP jvm_compilation_time_ms The approximate accumulated elapsed time spent in compilation
+jvm_compilation_time_ms_total{application="Artifactory",compiler="HotSpot 64-Bit Tiered Compilers"} 99225.0
+# TYPE workqueue_max_workers gauge
+# HELP workqueue_max_workers The total number of workers assigned to the queue
+workqueue_max_workers{application="Artifactory",name="Persistent Queue Triggering"} 10.0
+# TYPE workqueue_tasks_ignored counter
+# HELP workqueue_tasks_ignored Count of tasks rejected by the queue
+workqueue_tasks_ignored_total{application="Artifactory",name="Persistent Queue Triggering"} 0.0
+# TYPE jvm_gc_max_data_size_bytes gauge
+# HELP jvm_gc_max_data_size_bytes Max size of long-lived heap memory pool
+jvm_gc_max_data_size_bytes{application="Artifactory"} 2.147483648E9
+# TYPE jobs_active gauge
+# HELP jobs_active The number of scheduled jobs running at the moment
+jobs_active{application="Artifactory",group="artifactory",name="readiness",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="quartz-task-history-cleaner",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="heartbeat",scheduler="hbScheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="repo-path-checksum-migration",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="artifact-distribution-status",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="binary-store-garbage-collector",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="project-storage-quota-notification",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="heavy-query-cache-cleanup",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="cleanup-create-report-expired-orphaned",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="federated-binaries-tasks-data-migration",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="docker-uploads-folder-cleanup",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="docker-v2-tag-cleanup",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="virtual-cache-cleanup",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="huggingface-uploads-folder-cleanup",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="integration-cleanup",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="federated-file-list-tasks-task",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="federated-fullsync-dir-cleanup-task",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="xray-index-event",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="binary-store-error-notification",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="federated-fullsync-system-repo-cleanup-task",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="job-table-cleanup",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="federated-refresh-master-tokens",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="event-log-cleanup",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="federated-auto-healing-task",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="stats-delegating-service-flush",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="folder-pruning",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="sync-repositories-with-access",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="sha-256-migration",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="persistent-queue",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="mirror-heartbeat",scheduler="hbScheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="airgap-recovery",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="release-bundle-cleanup",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="credentials-watch",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="federated-fullsync-task",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="repo-config-persisting-service",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="stats-persisting-service-flush",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="federated-reset-stale-fullsync-task",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="storage-usage-sync",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="node-event-cursor-cleanup",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="tmp-event-log-truncate",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="update-indices",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="docker-tag-orphan-layer-cleanup",scheduler="scheduler"} 0.0
+jobs_active{application="Artifactory",group="artifactory",name="bundle-handler-promotion-xray",scheduler="scheduler"} 0.0
+# TYPE jvm_buffer_count_buffers gauge
+# HELP jvm_buffer_count_buffers An estimate of the number of buffers in the pool
+jvm_buffer_count_buffers{application="Artifactory",id="direct"} 90.0
+jvm_buffer_count_buffers{application="Artifactory",id="mapped"} 0.0
+jvm_buffer_count_buffers{application="Artifactory",id="mapped - 'non-volatile memory'"} 0.0
+# TYPE tomcat_sessions_alive_max_seconds gauge
+# HELP tomcat_sessions_alive_max_seconds  
+tomcat_sessions_alive_max_seconds{application="Artifactory"} 0.0
+# TYPE jvm_gc_concurrent_phase_time_seconds summary
+# HELP jvm_gc_concurrent_phase_time_seconds Time spent in concurrent phase
+jvm_gc_concurrent_phase_time_seconds_count{action="end of concurrent GC pause",application="Artifactory",cause="No GC",gc="G1 Concurrent GC"} 10.0
+jvm_gc_concurrent_phase_time_seconds_sum{action="end of concurrent GC pause",application="Artifactory",cause="No GC",gc="G1 Concurrent GC"} 0.122
+# TYPE jvm_gc_concurrent_phase_time_seconds_max gauge
+# HELP jvm_gc_concurrent_phase_time_seconds_max Time spent in concurrent phase
+jvm_gc_concurrent_phase_time_seconds_max{action="end of concurrent GC pause",application="Artifactory",cause="No GC",gc="G1 Concurrent GC"} 0.0
+# TYPE tomcat_connections_current_connections gauge
+# HELP tomcat_connections_current_connections  
+tomcat_connections_current_connections{application="Artifactory",name="http-nio-127.0.0.1-8091"} 2.0
+tomcat_connections_current_connections{application="Artifactory",name="http-nio-8081"} 2.0
+# TYPE pq_shift_events_duration_seconds summary
+# HELP pq_shift_events_duration_seconds Duration of shift events
+pq_shift_events_duration_seconds_count{application="Artifactory",type="fetch"} 158.0
+pq_shift_events_duration_seconds_sum{application="Artifactory",type="fetch"} 0.091
+pq_shift_events_duration_seconds_count{application="Artifactory",type="delete"} 158.0
+pq_shift_events_duration_seconds_sum{application="Artifactory",type="delete"} 0.002
+pq_shift_events_duration_seconds_count{application="Artifactory",type="copy"} 158.0
+pq_shift_events_duration_seconds_sum{application="Artifactory",type="copy"} 0.005
+# TYPE pq_shift_events_duration_seconds_max gauge
+# HELP pq_shift_events_duration_seconds_max Duration of shift events
+pq_shift_events_duration_seconds_max{application="Artifactory",type="fetch"} 0.0
+pq_shift_events_duration_seconds_max{application="Artifactory",type="delete"} 0.0
+pq_shift_events_duration_seconds_max{application="Artifactory",type="copy"} 0.0
+# TYPE jvm_memory_usage_after_gc_percent gauge
+# HELP jvm_memory_usage_after_gc_percent The percentage of long-lived heap pool used after the last GC event, in the range [0..1]
+jvm_memory_usage_after_gc_percent{application="Artifactory",area="heap",pool="long-lived"} 0.07878730818629265
+# TYPE jvm_threads_started_threads counter
+# HELP jvm_threads_started_threads The total number of application threads started in the JVM
+jvm_threads_started_threads_total{application="Artifactory"} 2621.0
+# TYPE process_uptime_seconds gauge
+# HELP process_uptime_seconds The uptime of the Java virtual machine
+process_uptime_seconds{application="Artifactory"} 4664.088
+# TYPE system_cpu_usage gauge
+# HELP system_cpu_usage The \"recent cpu usage\" of the system the application is running in
+system_cpu_usage{application="Artifactory"} 0.07472167897180883
+# TYPE jvm_threads_live_threads gauge
+# HELP jvm_threads_live_threads The current number of live threads including both daemon and non-daemon threads
+jvm_threads_live_threads{application="Artifactory"} 162.0
+# TYPE jvm_classes_unloaded_classes counter
+# HELP jvm_classes_unloaded_classes The total number of classes unloaded since the Java virtual machine has started execution
+jvm_classes_unloaded_classes_total{application="Artifactory"} 1099.0
+# TYPE jvm_memory_committed_bytes gauge
+# HELP jvm_memory_committed_bytes The amount of memory in bytes that is committed for the Java virtual machine to use
+jvm_memory_committed_bytes{application="Artifactory",area="nonheap",id="Compressed Class Space"} 2.12992E7
+jvm_memory_committed_bytes{application="Artifactory",area="nonheap",id="CodeHeap 'non-profiled nmethods'"} 1.8284544E7
+jvm_memory_committed_bytes{application="Artifactory",area="nonheap",id="CodeHeap 'non-nmethods'"} 4521984.0
+jvm_memory_committed_bytes{application="Artifactory",area="heap",id="G1 Old Gen"} 2.01326592E8
+jvm_memory_committed_bytes{application="Artifactory",area="heap",id="G1 Eden Space"} 3.29252864E8
+jvm_memory_committed_bytes{application="Artifactory",area="nonheap",id="Metaspace"} 1.7661952E8
+jvm_memory_committed_bytes{application="Artifactory",area="nonheap",id="CodeHeap 'profiled nmethods'"} 4.3319296E7
+jvm_memory_committed_bytes{application="Artifactory",area="heap",id="G1 Survivor Space"} 1.3631488E7
+# TYPE system_cpu_count gauge
+# HELP system_cpu_count The number of processors available to the Java virtual machine
+system_cpu_count{application="Artifactory"} 16.0
+# TYPE workqueue_tasks_published counter
+# HELP workqueue_tasks_published The count of tasks published to the queue
+workqueue_tasks_published_total{application="Artifactory",name="Persistent Queue Triggering"} 2.0
+# TYPE pq_events_bulk_consume_duration_seconds summary
+# HELP pq_events_bulk_consume_duration_seconds description: The total time spent on fetching event bulks from the persistent queue, filtering and processing them.
+pq_events_bulk_consume_duration_seconds_count{application="Artifactory",queue="gc",result="NOTHING_TO_DO"} 2.0
+pq_events_bulk_consume_duration_seconds_sum{application="Artifactory",queue="gc",result="NOTHING_TO_DO"} 0.041
+# TYPE pq_events_bulk_consume_duration_seconds_max gauge
+# HELP pq_events_bulk_consume_duration_seconds_max description: The total time spent on fetching event bulks from the persistent queue, filtering and processing them.
+pq_events_bulk_consume_duration_seconds_max{application="Artifactory",queue="gc",result="NOTHING_TO_DO"} 0.0
+# TYPE tomcat_threads_busy_threads gauge
+# HELP tomcat_threads_busy_threads  
+tomcat_threads_busy_threads{application="Artifactory",name="http-nio-127.0.0.1-8091"} 0.0
+tomcat_threads_busy_threads{application="Artifactory",name="http-nio-8081"} 1.0
+# TYPE http_time_to_start_seconds_max gauge
+# HELP http_time_to_start_seconds_max The time taken to start processing incoming HTTP requests
+http_time_to_start_seconds_max{application="Artifactory",group="",method="POST",package="",status="200"} 0.0
+http_time_to_start_seconds_max{application="Artifactory",group="probes",method="GET",package="",status="200"} 0.0
+http_time_to_start_seconds_max{application="Artifactory",group="system/info",method="GET",package="",status="200"} 0.0
+# TYPE http_time_to_start_seconds summary
+# HELP http_time_to_start_seconds The time taken to start processing incoming HTTP requests
+http_time_to_start_seconds_count{application="Artifactory",group="",method="POST",package="",status="200"} 3.0
+http_time_to_start_seconds_sum{application="Artifactory",group="",method="POST",package="",status="200"} 0.001
+http_time_to_start_seconds_count{application="Artifactory",group="probes",method="GET",package="",status="200"} 926.0
+http_time_to_start_seconds_sum{application="Artifactory",group="probes",method="GET",package="",status="200"} 0.142
+http_time_to_start_seconds_count{application="Artifactory",group="system/info",method="GET",package="",status="200"} 18.0
+http_time_to_start_seconds_sum{application="Artifactory",group="system/info",method="GET",package="",status="200"} 0.001
+# TYPE pq_events_consumed counter
+# HELP pq_events_consumed The total number of events that were consumed from the persistent queue (before filtering).
+pq_events_consumed_total{application="Artifactory",queue="gc"} 0.0
+# TYPE jvm_gc_memory_promoted_bytes counter
+# HELP jvm_gc_memory_promoted_bytes Count of positive increases in the size of the old generation memory pool before GC to after GC
+jvm_gc_memory_promoted_bytes_total{application="Artifactory"} 1.11990288E8
+# TYPE system_load_average_1m gauge
+# HELP system_load_average_1m The sum of the number of runnable entities queued to available processors and the number of runnable entities running on the available processors averaged over a period of time
+system_load_average_1m{application="Artifactory"} 0.75
+# TYPE jvm_gc_memory_allocated_bytes counter
+# HELP jvm_gc_memory_allocated_bytes Incremented for an increase in the size of the (young) heap memory pool after one GC to before the next
+jvm_gc_memory_allocated_bytes_total{application="Artifactory"} 4.195352576E9
+# TYPE tomcat_global_sent_bytes counter
+# HELP tomcat_global_sent_bytes  
+tomcat_global_sent_bytes_total{application="Artifactory",name="http-nio-127.0.0.1-8091"} 19303.0
+tomcat_global_sent_bytes_total{application="Artifactory",name="http-nio-8081"} 1468825.0
+# TYPE pq_queue_events_left gauge
+# HELP pq_queue_events_left Events left for the specific queue to handle to overcome the lag
+pq_queue_events_left{application="Artifactory",queue_name="jfrog_federation_service_queue"} 0.0
+# TYPE tomcat_global_request_seconds summary
+# HELP tomcat_global_request_seconds  
+tomcat_global_request_seconds_count{application="Artifactory",name="http-nio-127.0.0.1-8091"} 927.0
+tomcat_global_request_seconds_sum{application="Artifactory",name="http-nio-127.0.0.1-8091"} 1.277
+tomcat_global_request_seconds_count{application="Artifactory",name="http-nio-8081"} 35.0
+tomcat_global_request_seconds_sum{application="Artifactory",name="http-nio-8081"} 2.63
+# TYPE jvm_classes_loaded_classes gauge
+# HELP jvm_classes_loaded_classes The number of classes that are currently loaded in the Java virtual machine
+jvm_classes_loaded_classes{application="Artifactory"} 30229.0
+# TYPE tomcat_global_received_bytes counter
+# HELP tomcat_global_received_bytes  
+tomcat_global_received_bytes_total{application="Artifactory",name="http-nio-127.0.0.1-8091"} 0.0
+tomcat_global_received_bytes_total{application="Artifactory",name="http-nio-8081"} 1399.0
+# TYPE workqueue_pending_duration_seconds_max gauge
+# HELP workqueue_pending_duration_seconds_max The duration a task spent waiting in the queue
+workqueue_pending_duration_seconds_max{application="Artifactory",name="Persistent Queue Triggering"} 0.0
+# TYPE workqueue_pending_duration_seconds summary
+# HELP workqueue_pending_duration_seconds The duration a task spent waiting in the queue
+workqueue_pending_duration_seconds_count{application="Artifactory",name="Persistent Queue Triggering"} 2.0
+workqueue_pending_duration_seconds_sum{application="Artifactory",name="Persistent Queue Triggering"} 0.012
+# TYPE pq_queue_events_to_send counter
+# HELP pq_queue_events_to_send The number of events sent by the queue
+pq_queue_events_to_send_total{application="Artifactory",queue_name="jfrog_federation_service_queue"} 0.0
+# TYPE db_cluster gauge
+# HELP db_cluster Database context information
+db_cluster{application="Artifactory",db_name="postgres",hash="c7e",name="db"} 1.0
+# TYPE pq_queue_events_failed_on_send counter
+# HELP pq_queue_events_failed_on_send The number of events that failed to send by the queue
+pq_queue_events_failed_on_send_total{application="Artifactory",queue_name="jfrog_federation_service_queue"} 0.0
+# TYPE workqueue_active_workers gauge
+# HELP workqueue_active_workers The current count of active workers
+workqueue_active_workers{application="Artifactory",name="Persistent Queue Triggering"} 0.0
+# TYPE workqueue_tasks_consumed counter
+# HELP workqueue_tasks_consumed Count of tasks consumed from the queue
+workqueue_tasks_consumed_total{application="Artifactory",name="Persistent Queue Triggering"} 2.0
+# TYPE jvm_gc_overhead_percent gauge
+# HELP jvm_gc_overhead_percent An approximation of the percent of CPU time used by GC activities over the last lookback period or since monitoring began, whichever is shorter, in the range [0..1]
+jvm_gc_overhead_percent{application="Artifactory"} 0.0
+# TYPE pq_events_queued counter
+# HELP pq_events_queued The total number of events that were published to the temporary buffer of the persistent queue
+pq_events_queued_total{application="Artifactory",type="create"} 1.0
+pq_events_queued_total{application="Artifactory",type="props"} 1.0
+# TYPE tomcat_sessions_active_max_sessions gauge
+# HELP tomcat_sessions_active_max_sessions  
+tomcat_sessions_active_max_sessions{application="Artifactory"} 0.0
+# TYPE tomcat_cache_access counter
+# HELP tomcat_cache_access  
+tomcat_cache_access_total{application="Artifactory"} 0.0
+# TYPE tomcat_sessions_expired_sessions counter
+# HELP tomcat_sessions_expired_sessions  
+tomcat_sessions_expired_sessions_total{application="Artifactory"} 0.0
+# TYPE jobs_exec_seconds_max gauge
+# HELP jobs_exec_seconds_max The time of scheduled job execution
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="repo-path-checksum-migration",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="artifact-distribution-status",result="ok",scheduler="scheduler"} 0.001
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="quartz-task-history-cleaner",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="airgap-recovery",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="persistent-queue",result="ok",scheduler="scheduler"} 0.002
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="federated-file-list-tasks-task",result="ok",scheduler="scheduler"} 0.002
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="update-indices",result="ok",scheduler="scheduler"} 0.001
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="docker-uploads-folder-cleanup",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="virtual-cache-cleanup",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="sha-256-migration",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="heartbeat",result="ok",scheduler="hbScheduler"} 0.005
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="federated-refresh-master-tokens",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="credentials-watch",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="xray-index-event",result="ok",scheduler="scheduler"} 0.001
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="mirror-heartbeat",result="ok",scheduler="hbScheduler"} 0.001
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="docker-v2-tag-cleanup",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="federated-fullsync-dir-cleanup-task",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="cleanup-create-report-expired-orphaned",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="node-event-cursor-cleanup",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="integration-cleanup",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="project-storage-quota-notification",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="release-bundle-cleanup",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="huggingface-uploads-folder-cleanup",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="storage-usage-sync",result="ok",scheduler="scheduler"} 0.008
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="bundle-handler-promotion-xray",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="federated-binaries-tasks-data-migration",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="federated-fullsync-task",result="ok",scheduler="scheduler"} 0.001
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="binary-store-garbage-collector",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="stats-persisting-service-flush",result="ok",scheduler="scheduler"} 0.001
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="repo-config-persisting-service",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="docker-tag-orphan-layer-cleanup",result="ok",scheduler="scheduler"} 0.001
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="federated-auto-healing-task",result="ok",scheduler="scheduler"} 0.004
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="heavy-query-cache-cleanup",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="folder-pruning",result="ok",scheduler="scheduler"} 0.001
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="binary-store-error-notification",result="ok",scheduler="scheduler"} 0.001
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="readiness",result="ok",scheduler="scheduler"} 0.008
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="job-table-cleanup",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="federated-reset-stale-fullsync-task",result="ok",scheduler="scheduler"} 0.001
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="event-log-cleanup",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="stats-delegating-service-flush",result="ok",scheduler="scheduler"} 0.001
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="sync-repositories-with-access",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="tmp-event-log-truncate",result="ok",scheduler="scheduler"} 0.0
+jobs_exec_seconds_max{application="Artifactory",ex="",group="artifactory",name="federated-fullsync-system-repo-cleanup-task",result="ok",scheduler="scheduler"} 0.0
+# TYPE jobs_exec_seconds summary
+# HELP jobs_exec_seconds The time of scheduled job execution
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="repo-path-checksum-migration",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="repo-path-checksum-migration",result="ok",scheduler="scheduler"} 0.004
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="artifact-distribution-status",result="ok",scheduler="scheduler"} 308.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="artifact-distribution-status",result="ok",scheduler="scheduler"} 0.121
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="quartz-task-history-cleaner",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="quartz-task-history-cleaner",result="ok",scheduler="scheduler"} 0.037
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="airgap-recovery",result="ok",scheduler="scheduler"} 15.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="airgap-recovery",result="ok",scheduler="scheduler"} 0.032
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="persistent-queue",result="ok",scheduler="scheduler"} 155.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="persistent-queue",result="ok",scheduler="scheduler"} 0.335
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="federated-file-list-tasks-task",result="ok",scheduler="scheduler"} 154.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="federated-file-list-tasks-task",result="ok",scheduler="scheduler"} 0.417
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="update-indices",result="ok",scheduler="scheduler"} 169.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="update-indices",result="ok",scheduler="scheduler"} 0.062
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="docker-uploads-folder-cleanup",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="docker-uploads-folder-cleanup",result="ok",scheduler="scheduler"} 0.012
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="virtual-cache-cleanup",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="virtual-cache-cleanup",result="ok",scheduler="scheduler"} 0.074
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="sha-256-migration",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="sha-256-migration",result="ok",scheduler="scheduler"} 0.004
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="heartbeat",result="ok",scheduler="hbScheduler"} 924.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="heartbeat",result="ok",scheduler="hbScheduler"} 4.32
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="federated-refresh-master-tokens",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="federated-refresh-master-tokens",result="ok",scheduler="scheduler"} 0.116
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="credentials-watch",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="credentials-watch",result="ok",scheduler="scheduler"} 0.059
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="xray-index-event",result="ok",scheduler="scheduler"} 77.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="xray-index-event",result="ok",scheduler="scheduler"} 0.042
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="mirror-heartbeat",result="ok",scheduler="hbScheduler"} 231.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="mirror-heartbeat",result="ok",scheduler="hbScheduler"} 0.089
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="docker-v2-tag-cleanup",result="ok",scheduler="scheduler"} 15.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="docker-v2-tag-cleanup",result="ok",scheduler="scheduler"} 0.004
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="federated-fullsync-dir-cleanup-task",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="federated-fullsync-dir-cleanup-task",result="ok",scheduler="scheduler"} 0.003
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="cleanup-create-report-expired-orphaned",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="cleanup-create-report-expired-orphaned",result="ok",scheduler="scheduler"} 0.003
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="node-event-cursor-cleanup",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="node-event-cursor-cleanup",result="ok",scheduler="scheduler"} 0.005
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="integration-cleanup",result="ok",scheduler="scheduler"} 15.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="integration-cleanup",result="ok",scheduler="scheduler"} 0.002
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="project-storage-quota-notification",result="ok",scheduler="scheduler"} 2.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="project-storage-quota-notification",result="ok",scheduler="scheduler"} 0.002
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="release-bundle-cleanup",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="release-bundle-cleanup",result="ok",scheduler="scheduler"} 0.005
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="huggingface-uploads-folder-cleanup",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="huggingface-uploads-folder-cleanup",result="ok",scheduler="scheduler"} 0.096
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="storage-usage-sync",result="ok",scheduler="scheduler"} 77.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="storage-usage-sync",result="ok",scheduler="scheduler"} 0.096
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="bundle-handler-promotion-xray",result="ok",scheduler="scheduler"} 2.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="bundle-handler-promotion-xray",result="ok",scheduler="scheduler"} 0.012
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="federated-binaries-tasks-data-migration",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="federated-binaries-tasks-data-migration",result="ok",scheduler="scheduler"} 0.001
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="federated-fullsync-task",result="ok",scheduler="scheduler"} 229.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="federated-fullsync-task",result="ok",scheduler="scheduler"} 0.268
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="binary-store-garbage-collector",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="binary-store-garbage-collector",result="ok",scheduler="scheduler"} 0.248
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="stats-persisting-service-flush",result="ok",scheduler="scheduler"} 154.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="stats-persisting-service-flush",result="ok",scheduler="scheduler"} 0.073
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="repo-config-persisting-service",result="ok",scheduler="scheduler"} 3.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="repo-config-persisting-service",result="ok",scheduler="scheduler"} 0.091
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="docker-tag-orphan-layer-cleanup",result="ok",scheduler="scheduler"} 51.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="docker-tag-orphan-layer-cleanup",result="ok",scheduler="scheduler"} 0.019
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="federated-auto-healing-task",result="ok",scheduler="scheduler"} 229.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="federated-auto-healing-task",result="ok",scheduler="scheduler"} 0.84
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="heavy-query-cache-cleanup",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="heavy-query-cache-cleanup",result="ok",scheduler="scheduler"} 0.064
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="folder-pruning",result="ok",scheduler="scheduler"} 15.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="folder-pruning",result="ok",scheduler="scheduler"} 0.008
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="binary-store-error-notification",result="ok",scheduler="scheduler"} 154.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="binary-store-error-notification",result="ok",scheduler="scheduler"} 0.054
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="readiness",result="ok",scheduler="scheduler"} 309.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="readiness",result="ok",scheduler="scheduler"} 2.945
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="job-table-cleanup",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="job-table-cleanup",result="ok",scheduler="scheduler"} 0.008
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="federated-reset-stale-fullsync-task",result="ok",scheduler="scheduler"} 6.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="federated-reset-stale-fullsync-task",result="ok",scheduler="scheduler"} 0.007
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="event-log-cleanup",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="event-log-cleanup",result="ok",scheduler="scheduler"} 0.028
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="stats-delegating-service-flush",result="ok",scheduler="scheduler"} 132.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="stats-delegating-service-flush",result="ok",scheduler="scheduler"} 0.048
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="sync-repositories-with-access",result="ok",scheduler="scheduler"} 6.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="sync-repositories-with-access",result="ok",scheduler="scheduler"} 0.008
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="tmp-event-log-truncate",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="tmp-event-log-truncate",result="ok",scheduler="scheduler"} 0.062
+jobs_exec_seconds_count{application="Artifactory",ex="",group="artifactory",name="federated-fullsync-system-repo-cleanup-task",result="ok",scheduler="scheduler"} 1.0
+jobs_exec_seconds_sum{application="Artifactory",ex="",group="artifactory",name="federated-fullsync-system-repo-cleanup-task",result="ok",scheduler="scheduler"} 0.077
+# TYPE tomcat_servlet_request_max_seconds gauge
+# HELP tomcat_servlet_request_max_seconds  
+tomcat_servlet_request_max_seconds{application="Artifactory",name="Git Servlet"} 0.0
+tomcat_servlet_request_max_seconds{application="Artifactory",name="Jersey Web Application"} 0.486
+tomcat_servlet_request_max_seconds{application="Artifactory",name="default"} 0.0
+tomcat_servlet_request_max_seconds{application="Artifactory",name="Binary Store"} 0.0
+# TYPE tomcat_sessions_active_current_sessions gauge
+# HELP tomcat_sessions_active_current_sessions  
+tomcat_sessions_active_current_sessions{application="Artifactory"} 0.0
+# TYPE tomcat_sessions_rejected_sessions counter
+# HELP tomcat_sessions_rejected_sessions  
+tomcat_sessions_rejected_sessions_total{application="Artifactory"} 0.0
+# TYPE tomcat_failed_metrics gauge
+# HELP tomcat_failed_metrics The number of failed Tomcat metrics at the moment
+tomcat_failed_metrics{application="Artifactory"} 0.0
+# TYPE workqueue_pending_size gauge
+# HELP workqueue_pending_size The total count of tasks in the pending queue
+workqueue_pending_size{application="Artifactory",name="Persistent Queue Triggering"} 0.0
+# TYPE http_time_write_seconds_max gauge
+# HELP http_time_write_seconds_max The time taken to write the response body to HTTP.
+http_time_write_seconds_max{application="Artifactory",group="",method="POST",package="",status="200"} 0.0
+http_time_write_seconds_max{application="Artifactory",group="probes",method="GET",package="",status="200"} 0.001
+http_time_write_seconds_max{application="Artifactory",group="system/info",method="GET",package="",status="200"} 0.0
+# TYPE http_time_write_seconds summary
+# HELP http_time_write_seconds The time taken to write the response body to HTTP.
+http_time_write_seconds_count{application="Artifactory",group="",method="POST",package="",status="200"} 3.0
+http_time_write_seconds_sum{application="Artifactory",group="",method="POST",package="",status="200"} 0.001
+http_time_write_seconds_count{application="Artifactory",group="probes",method="GET",package="",status="200"} 926.0
+http_time_write_seconds_sum{application="Artifactory",group="probes",method="GET",package="",status="200"} 0.285
+http_time_write_seconds_count{application="Artifactory",group="system/info",method="GET",package="",status="200"} 18.0
+http_time_write_seconds_sum{application="Artifactory",group="system/info",method="GET",package="",status="200"} 0.035
+# TYPE pq_queue_single_event_handle_avg_time_seconds_max gauge
+# HELP pq_queue_single_event_handle_avg_time_seconds_max measures the average time taken by the queue to handle each individual event
+pq_queue_single_event_handle_avg_time_seconds_max{application="Artifactory",queue_name="jfrog_federation_service_queue"} 0.0
+# TYPE pq_queue_single_event_handle_avg_time_seconds summary
+# HELP pq_queue_single_event_handle_avg_time_seconds measures the average time taken by the queue to handle each individual event
+pq_queue_single_event_handle_avg_time_seconds_count{application="Artifactory",queue_name="jfrog_federation_service_queue"} 0.0
+pq_queue_single_event_handle_avg_time_seconds_sum{application="Artifactory",queue_name="jfrog_federation_service_queue"} 0.0
+# TYPE process_cpu_usage gauge
+# HELP process_cpu_usage The \"recent cpu usage\" for the Java Virtual Machine process
+process_cpu_usage{application="Artifactory"} 5.60741775262257E-4
+# TYPE jvm_threads_states_threads gauge
+# HELP jvm_threads_states_threads The current number of threads
+jvm_threads_states_threads{application="Artifactory",state="timed-waiting"} 100.0
+jvm_threads_states_threads{application="Artifactory",state="terminated"} 0.0
+jvm_threads_states_threads{application="Artifactory",state="waiting"} 34.0
+jvm_threads_states_threads{application="Artifactory",state="blocked"} 0.0
+jvm_threads_states_threads{application="Artifactory",state="new"} 0.0
+jvm_threads_states_threads{application="Artifactory",state="runnable"} 28.0
+# TYPE pq_queue_sent_successfully counter
+# HELP pq_queue_sent_successfully The number of events successfully sent by the queue
+pq_queue_sent_successfully_total{application="Artifactory",queue_name="jfrog_federation_service_queue"} 0.0
+# TYPE tomcat_servlet_request_seconds summary
+# HELP tomcat_servlet_request_seconds  
+tomcat_servlet_request_seconds_count{application="Artifactory",name="Git Servlet"} 0.0
+tomcat_servlet_request_seconds_sum{application="Artifactory",name="Git Servlet"} 0.0
+tomcat_servlet_request_seconds_count{application="Artifactory",name="Jersey Web Application"} 963.0
+tomcat_servlet_request_seconds_sum{application="Artifactory",name="Jersey Web Application"} 3.926
+tomcat_servlet_request_seconds_count{application="Artifactory",name="default"} 0.0
+tomcat_servlet_request_seconds_sum{application="Artifactory",name="default"} 0.0
+tomcat_servlet_request_seconds_count{application="Artifactory",name="Binary Store"} 0.0
+tomcat_servlet_request_seconds_sum{application="Artifactory",name="Binary Store"} 0.0
+# TYPE tomcat_sessions_created_sessions counter
+# HELP tomcat_sessions_created_sessions  
+tomcat_sessions_created_sessions_total{application="Artifactory"} 0.0
+# TYPE jvm_gc_live_data_size_bytes gauge
+# HELP jvm_gc_live_data_size_bytes Size of long-lived heap memory pool after reclamation
+jvm_gc_live_data_size_bytes{application="Artifactory"} 1.6814588E8
+# TYPE tomcat_global_error counter
+# HELP tomcat_global_error  
+tomcat_global_error_total{application="Artifactory",name="http-nio-127.0.0.1-8091"} 3.0
+tomcat_global_error_total{application="Artifactory",name="http-nio-8081"} 12.0
+# TYPE tomcat_servlet_error counter
+# HELP tomcat_servlet_error  
+tomcat_servlet_error_total{application="Artifactory",name="Git Servlet"} 0.0
+tomcat_servlet_error_total{application="Artifactory",name="Jersey Web Application"} 5.0
+tomcat_servlet_error_total{application="Artifactory",name="default"} 0.0
+tomcat_servlet_error_total{application="Artifactory",name="Binary Store"} 0.0
+# TYPE tomcat_threads_config_max_threads gauge
+# HELP tomcat_threads_config_max_threads  
+tomcat_threads_config_max_threads{application="Artifactory",name="http-nio-127.0.0.1-8091"} 5.0
+tomcat_threads_config_max_threads{application="Artifactory",name="http-nio-8081"} 200.0
+# TYPE jvm_memory_max_bytes gauge
+# HELP jvm_memory_max_bytes The maximum amount of memory in bytes that can be used for memory management
+jvm_memory_max_bytes{application="Artifactory",area="nonheap",id="Compressed Class Space"} 1.073741824E9
+jvm_memory_max_bytes{application="Artifactory",area="nonheap",id="CodeHeap 'non-profiled nmethods'"} 1.22028032E8
+jvm_memory_max_bytes{application="Artifactory",area="nonheap",id="CodeHeap 'non-nmethods'"} 7606272.0
+jvm_memory_max_bytes{application="Artifactory",area="heap",id="G1 Old Gen"} 2.147483648E9
+jvm_memory_max_bytes{application="Artifactory",area="heap",id="G1 Eden Space"} -1.0
+jvm_memory_max_bytes{application="Artifactory",area="nonheap",id="Metaspace"} -1.0
+jvm_memory_max_bytes{application="Artifactory",area="nonheap",id="CodeHeap 'profiled nmethods'"} 1.22023936E8
+jvm_memory_max_bytes{application="Artifactory",area="heap",id="G1 Survivor Space"} -1.0
+# TYPE logback_events counter
+# HELP logback_events Number of log events that were enabled by the effective log level
+logback_events_total{application="Artifactory",level="debug"} 0.0
+logback_events_total{application="Artifactory",level="info"} 1227.0
+logback_events_total{application="Artifactory",level="trace"} 0.0
+logback_events_total{application="Artifactory",level="error"} 0.0
+logback_events_total{application="Artifactory",level="warn"} 9.0
+# TYPE pq_shift_events counter
+# HELP pq_shift_events Count of events handled during shift events
+pq_shift_events_total{application="Artifactory",type="delete"} 2.0
+pq_shift_events_total{application="Artifactory",type="copy"} 2.0
+# TYPE jvm_gc_pause_seconds summary
+# HELP jvm_gc_pause_seconds Time spent in GC pause
+jvm_gc_pause_seconds_count{action="end of minor GC",application="Artifactory",cause="G1 Humongous Allocation",gc="G1 Young Generation"} 3.0
+jvm_gc_pause_seconds_sum{action="end of minor GC",application="Artifactory",cause="G1 Humongous Allocation",gc="G1 Young Generation"} 0.034
+jvm_gc_pause_seconds_count{action="end of minor GC",application="Artifactory",cause="G1 Evacuation Pause",gc="G1 Young Generation"} 13.0
+jvm_gc_pause_seconds_sum{action="end of minor GC",application="Artifactory",cause="G1 Evacuation Pause",gc="G1 Young Generation"} 0.212
+# TYPE jvm_gc_pause_seconds_max gauge
+# HELP jvm_gc_pause_seconds_max Time spent in GC pause
+jvm_gc_pause_seconds_max{action="end of minor GC",application="Artifactory",cause="G1 Humongous Allocation",gc="G1 Young Generation"} 0.0
+jvm_gc_pause_seconds_max{action="end of minor GC",application="Artifactory",cause="G1 Evacuation Pause",gc="G1 Young Generation"} 0.0
+# TYPE http_time_total_seconds_max gauge
+# HELP http_time_total_seconds_max The total time taken to process incoming HTTP requests
+http_time_total_seconds_max{application="Artifactory",group="",method="POST",package="",status="200"} 0.0
+http_time_total_seconds_max{application="Artifactory",group="probes",method="GET",package="",status="200"} 0.001
+http_time_total_seconds_max{application="Artifactory",group="system/info",method="GET",package="",status="200"} 0.0
+# TYPE http_time_total_seconds summary
+# HELP http_time_total_seconds The total time taken to process incoming HTTP requests
+http_time_total_seconds_count{application="Artifactory",group="",method="POST",package="",status="200"} 3.0
+http_time_total_seconds_sum{application="Artifactory",group="",method="POST",package="",status="200"} 0.517
+http_time_total_seconds_count{application="Artifactory",group="probes",method="GET",package="",status="200"} 926.0
+http_time_total_seconds_sum{application="Artifactory",group="probes",method="GET",package="",status="200"} 0.764
+http_time_total_seconds_count{application="Artifactory",group="system/info",method="GET",package="",status="200"} 18.0
+http_time_total_seconds_sum{application="Artifactory",group="system/info",method="GET",package="",status="200"} 1.603
+# TYPE pq_queue_total_events_handling_duration_timer_seconds_max gauge
+# HELP pq_queue_total_events_handling_duration_timer_seconds_max Measures the total duration of event handling by the queue
+pq_queue_total_events_handling_duration_timer_seconds_max{application="Artifactory",queue_name="jfrog_federation_service_queue"} 0.0
+# TYPE pq_queue_total_events_handling_duration_timer_seconds summary
+# HELP pq_queue_total_events_handling_duration_timer_seconds Measures the total duration of event handling by the queue
+pq_queue_total_events_handling_duration_timer_seconds_count{application="Artifactory",queue_name="jfrog_federation_service_queue"} 0.0
+pq_queue_total_events_handling_duration_timer_seconds_sum{application="Artifactory",queue_name="jfrog_federation_service_queue"} 0.0
+# TYPE process_files_max_files gauge
+# HELP process_files_max_files The maximum file descriptor count
+process_files_max_files{application="Artifactory"} 500000.0
+# TYPE jvm_buffer_memory_used_bytes gauge
+# HELP jvm_buffer_memory_used_bytes An estimate of the memory that the Java virtual machine is using for this buffer pool
+jvm_buffer_memory_used_bytes{application="Artifactory",id="direct"} 3.063839E7
+jvm_buffer_memory_used_bytes{application="Artifactory",id="mapped"} 0.0
+jvm_buffer_memory_used_bytes{application="Artifactory",id="mapped - 'non-volatile memory'"} 0.0
+# TYPE tomcat_threads_current_threads gauge
+# HELP tomcat_threads_current_threads  
+tomcat_threads_current_threads{application="Artifactory",name="http-nio-127.0.0.1-8091"} 5.0
+tomcat_threads_current_threads{application="Artifactory",name="http-nio-8081"} 10.0
+# TYPE tomcat_connections_config_max_connections gauge
+# HELP tomcat_connections_config_max_connections  
+tomcat_connections_config_max_connections{application="Artifactory",name="http-nio-127.0.0.1-8091"} 8192.0
+tomcat_connections_config_max_connections{application="Artifactory",name="http-nio-8081"} 8192.0
+# TYPE jvm_threads_peak_threads gauge
+# HELP jvm_threads_peak_threads The peak live thread count since the Java virtual machine started or peak was reset
+jvm_threads_peak_threads{application="Artifactory"} 188.0
+# TYPE jvm_info gauge
+# HELP jvm_info JVM version info
+jvm_info{application="Artifactory",runtime="OpenJDK Runtime Environment",vendor="Eclipse Adoptium",version="21.0.5+11-LTS"} 1.0
+# EOF
