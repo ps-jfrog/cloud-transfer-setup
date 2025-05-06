@@ -4,7 +4,7 @@ This repository contains tools for monitoring and automatically tuning JFrog Art
 
 ## Scripts Overview
 
-### 1. fetch_metrics.py
+### 1. [fetch_metrics.py](fetch_metrics.py)
 
 A utility script to fetch metrics from JFrog Artifactory and Observability endpoints.
 
@@ -31,7 +31,7 @@ python fetch_metrics.py [options]
   - `artifactory_metrics_YYYYMMDD_HHMMSS.txt`
   - `observability_metrics_YYYYMMDD_HHMMSS.txt`
 
-### 2. tune-transfer-files.py
+### 2. [tune-transfer-files.py](tune-transfer-files.py)
 
 The main script for monitoring system metrics and automatically adjusting transfer threads.
 
