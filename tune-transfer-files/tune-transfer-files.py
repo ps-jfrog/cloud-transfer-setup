@@ -42,20 +42,9 @@ def get_artifactory_config(args, config):
     
     return base_url, token
 
-# --- Configuration ---
-THREAD_STEP = 64
-MIN_THREADS = 8
-MAX_THREADS = 1024
-CHECK_INTERVAL = 300  # seconds
+# Global variable for current threads
+current_threads = None
 
-# --- Thresholds ---
-CPU_LOW = 0.40
-CPU_HIGH = 0.85
-HEAP_LOW = 0.60
-HEAP_HIGH = 0.85
-DB_CONN_HIGH = 0.90
-
-current_threads = 128
 
 # --- Get Artifactory metrics ---
 def get_metrics(base_url, access_token):
@@ -110,9 +99,6 @@ def parse_metric(metrics, name):
                 return None
 
     return None
-
-
-
 
 # --- Adjust threads using non-interactive JFrog CLI ---
 def adjust_threads(new_count, config):
@@ -176,7 +162,6 @@ def monitor_and_scale(config, args, base_url, access_token):
             print("[DEBUG] Metric values:", cpu_usage, heap_used, heap_max, db_active, db_max)
             print("[!] Missing metrics. Skipping iteration.")
             return
-
 
         heap_ratio = heap_used / heap_max
         db_ratio = db_active / db_max
@@ -250,6 +235,8 @@ if __name__ == "__main__":
     args = parse_args()
     config = load_config(args.config)
     base_url, access_token = get_artifactory_config(args, config)
+    
+    # Initialize current_threads from config
     current_threads = config['threads']['min']
     
     while True:
